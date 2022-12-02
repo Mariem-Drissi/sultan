@@ -1,0 +1,121 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth ;
+}
+p{
+    font-weight:300;
+    color: #1111;
+}
+header{
+    position: fixed;
+    top:0px ;
+    left: 0px;
+    padding: 20px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0,5s;
+}
+
+.navbar{
+    display: flex;
+    position: relative;
+}
+.navbar li{
+    list-style: none;
+}
+.navbar a{
+color:rgb(252, 252, 252);
+text-decoration: none;
+margin-left: 30px;
+font-weight: 700p;
+}
+header .navbar li a:hover{
+    color:rgba(192, 86, 37, 0.788);
+    border-bottom: 2px solid rgba(192, 86, 37, 0.788);
+}
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.4)), url(rest1.jpg);
+    width: 100vw;
+    height: 100vh; 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+}
+.logo{
+    color:rgba(214, 170, 25, 0.788);
+      font-weight: bold;
+      font-size: em;
+      text-decoration:none;
+      font-family:initial ;
+      font-style: broadway;
+  }
+  p{
+    color:rgba(253, 253, 253, 0.788);
+    font-weight: bold;
+    font-size: 125px;
+    text-decoration:none;
+    font-family:initial  ;
+    padding:5cm; 
+    text-align: center;
+  }
+  .login input[type="submit"]:hover {
+    background: rgba(192, 86, 37, 0.788);
+}
+.login input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgba(192, 86, 37, 0.788);
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.5s;
+    cursor: pointer;
+    
+}
+.login input[type="text"] , .login input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    /** border: 2px solid #000000; **/
+    /**border-radius: 24px;**/
+    padding: 10px;
+    outline: none;
+    color: white;
+    border-color: white;
+    width: 200px;
+    transition: 0.5s;
+    border-bottom: 1px solid #ddd;
+}
+.login input[type="text"]:focus , .login input[type="password"]:focus {
+    width: 280px;
+    border-color:#f3824d;
+}
+ /**this for login form**/
+ .login {
+    width: 400px;
+    padding: 40px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.575);
+    border-radius: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top:100px;
+    
+}
+
